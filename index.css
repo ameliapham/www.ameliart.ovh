@@ -1,0 +1,28 @@
+body h2 {
+    border: 1px solid red;
+}
+
+#headerZone {
+    background-color: pink;
+}
+
+
+.pink-backgound {
+    background-color: pink;
+}
+
+.pink-backgound:nth-child(2) {
+    border: 1px solid black;
+}
+
+#article-1 h3 {
+    border: 1px solid black;
+}
+
+#article-1 p:first-of-type {
+    text-decoration: underline;
+}
+
+#article-1 p:last-of-type {
+    color: red;
+}

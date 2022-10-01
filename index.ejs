@@ -1,9 +1,62 @@
+
+
 <% 
-
     var data = [ "foo", "bar", "baz" ];
-
 %> 
 <html>
+
+<head>
+
+    <% var names= ["index.css", "header.css"]; %>
+    <% names.forEach(name=> { %>
+    <link rel="stylesheet" href="<%= name %>">
+    <% }); %>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Playfair+Display&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Amélia !!</title>
+</head>
+
+<body class="pink-background">
+
+
+    <article id="article-1">
+
+        <h3>Name of the article</h3>
+
+        <p>Content of the acticle</p>
+
+        <p>Joseph Garrone</p>
+
+        
+
+
+    </article>
+
+<!--Header-->
+<div id="headerZone">
+    <video autoplay muted loop id="headerVideo">
+        <source src="assets/headerVideo" type="video/mp4">
+    </video>
+
+    <div class="headTextZone pink-background">
+        <img src="homepage/headZone/headText.png" id="headText">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <a href="#foo-22">Go to foo</a>
+    <a href="./page2.html">Go to page 2</a>
 
 <% data.forEach(element => { %>
 
@@ -11,7 +64,17 @@
     
 <% }); %>
 
-<p>coucou</p>
+<% (new Array(100).fill("")).forEach((e,i) => { %>
+
+    <h2 id="foo-<%=i%>"> Hello <%= i %> </h2>
+    
+<% }); %>
+
+
+
+
+
+</body>
 
 </html>
 
