@@ -14,15 +14,3 @@ body h2 {
 .pink-backgound:nth-child(2) {
     border: 1px solid black;
 }
-
-#article-1 h3 {
-    border: 1px solid black;
-}
-
-#article-1 p:first-of-type {
-    text-decoration: underline;
-}
-
-#article-1 p:last-of-type {
-    color: red;
-}
