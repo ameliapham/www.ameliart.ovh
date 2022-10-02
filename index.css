@@ -200,7 +200,7 @@ animation: slidein 7s infinite;
 }
 
 .button:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: #FFF3E4;
     color: rgb(0, 0, 0);
     border: solid;
     border-color: #001B5B;
@@ -213,18 +213,19 @@ animation: slidein 7s infinite;
     width: 70%;
     display: flex;
     margin-bottom: 100px;
-    background-color: ;
 }
 
-.bull {
-    display: block;
+
+
+.bulle {
+    
 }
 
-.button-bull {
-    position: absolute;
+.button-bulle {
     text-decoration: none;
     top: 20px; 
     left: 20px;
+    display: block;
 }
 
 #avatar {
@@ -233,14 +234,33 @@ animation: slidein 7s infinite;
     margin-block-start: auto;
 }
 
-.jojo-button {
-    text-decoration: none; position: absolute; top: 20px; left: 20px; background-color: white; display: block; border-radius: 8px; color: darkblue; padding: 15px;
+@media (max-width: 1164px){
+
+    #bubble-main {
+        display: none !important;
+    }
+
+    
 }
 
-.jojo-button:hover {
-    background-color: pink;
-}
-
-.jojo-button:active {
+#foo {
     background-color: red;
+}
+
+@media (min-width: 300px){
+
+    #foo {
+        background-color: green;
+    }
+
+    
+}
+
+@media (min-width: 600px){
+
+    #foo {
+        background-color: cyan;
+    }
+
+    
 }
