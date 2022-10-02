@@ -1,9 +1,11 @@
 
 
- 
+
 <html>
 
 <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="assets/normalize.css" />
 
@@ -13,7 +15,7 @@
     
     <link rel="stylesheet" href="header.css">
     -->
-    <script src="myscripts.js"></script>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="index.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +29,7 @@
 <!--Header-->
 <div id="header-zone">
     <video autoplay muted loop id="header-video">
-        <source src="assets/headerVideo.mp4" type="video/mp4">
+        <!--<source src="assets/headerVideo.mp4" type="video/mp4">-->
     </video>
 
     <div class="header-text-zone">
@@ -35,11 +37,57 @@
     </div>
 
     <section class="scroll-down-zone">
-        <a href="#" class="scroll-down" address="true"></a>
+        <a href="#" id="scroll-down" address="true"></a>
     </section>
-    
 </div>
 
+<!--Introduction-->
+<section class="scroll" style="display:flex; justify-content:center">
+    <div id="intro-zone">
+        <img src="assets/mePhoto.jpg" id="intro-photo">
+        <div style="margin-left: 70px;">
+            <h1 class="intro-titre titre" >Moi.</h1>
+            <div style="margin-top: 50px ;margin-bottom: 20px;">
+                <div class="intro-sous-titre sous-titre">Salut,</div>
+                <div class="intro-sous-titre">
+                    <span class="sous-titre">je suis Amélia !</span>
+                </div>
+            </div>
+            <p>Mon prénom est Huong (PHAM), mais tout le monde m’appelle Amélia. Passionnée par la création numérique j’éprouve un plaisir intense  à concevoir des pages web. Elles me permettent d’exprimer ma  créativité. Je ne perds pas pour autant de vue qu’une interface  graphique se doit avant tout d’être claire et fonctionnelle.  Travailler sous cette double contrainte, joindre l’esthétique aux  fonctionnelles, c’est ce qui me plaît et me motive.</p>
+            <a href="#">
+                <button class="button">Téléchargez portfolio</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!--Mes projets-->
+ 
+<div style="display:flex;justify-content: center;">
+    <div id="projet-zone">   
+        <div id="projet-text-zone">
+            <h1 class="projet-titre titre" >Projets.</h1>
+            <div id="little-girl-wapper" style="position: relative; background-color: pink;">
+                <img src="assets/bull3.png" style="position: absolute; top: 0; left: 0;">
+                <a class="button button-bull" href="index.html">
+                    L'ombre chinois
+                </a>
+
+            </div>
+            <!--
+            <div class="bull">
+                <a class="button button-bull" href="index.html"
+                    style="background-color: white; display: block; border-radius: 8px; color: darkblue; padding: 15px;"
+                >
+                    L'ombre chinois
+                </a>
+            </div>
+        -->
+        </div>
+        <img src="assets/avatar.png" id="avatar">
+    </div>
+</div>
+        
 
 
 

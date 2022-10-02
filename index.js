@@ -1,6 +1,20 @@
-$(function() {
-    $('.scroll-down').click (function() {
-      $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+console.log("coucou");
+
+
+
+
+$(() => {
+
+    console.log("coucou2");
+
+    $('#scroll-down').click (() => {
+
+        console.log("click!");
+
+      $('html, body').animate({scrollTop: $('section.scroll').offset().top }, 'slow');
+
       return false;
     });
-  });
+
+
+});
