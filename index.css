@@ -233,7 +233,7 @@ animation: slidein 7s infinite;
     height: fit-content;
     margin-block-start: auto;
 }
-
+/*
 @media (max-width: 1164px){
 
     #bubble-main {
@@ -242,25 +242,4 @@ animation: slidein 7s infinite;
 
     
 }
-
-#foo {
-    background-color: red;
-}
-
-@media (min-width: 300px){
-
-    #foo {
-        background-color: green;
-    }
-
-    
-}
-
-@media (min-width: 600px){
-
-    #foo {
-        background-color: cyan;
-    }
-
-    
-}
+*/

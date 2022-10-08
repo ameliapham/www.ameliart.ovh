@@ -1,0 +1,68 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Playfair+Display&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========== Colors ==========*/
+    --background-color: hsl(33, 100%, 95%);
+    --title-color: hsl(0, 0%, 7%);
+    --title-shadow: hsl(0, 0%, 30%, 0.27);
+    --text-color: hsl(0, 0%, 0%);
+
+    --button-color: hsl(222, 100%, 18%);
+    --button-shadow: hsl(0, 0%, 30%, 0.27);
+    --button-border-color: hsl(222, 100%, 18%);
+    --button-hover-color: hsl(33, 100%, 95%);
+    --button-text-color: hsl(33, 100%, 95%);
+    --button-text-hover-color: hsl(0, 0%, 0%);
+
+    /*========== Font and typography ==========*/
+    --titre-font: "Cormorant Garamond", serif;
+    --body-font: "Poppins", serif;
+    --h1-font: "Playfair Display", serif;
+
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+
+    /*========== Margenes Bottom ==========*/
+    --mb-0-25: 0.25rem;
+    --mb-0-5: 0.5rem;
+    --mb-0-75: 0.75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 992px) {
+    :root {
+      --biggest-font-size: 4rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: 0.875rem;
+      --smaller-font-size: 0.813rem;
+    }
+}
+
+/*=============== BASE ===============*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    
+}
