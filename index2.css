@@ -64,5 +64,119 @@ html {
 }
 
 body {
-    
+    font-family: var(--body-font);
+    font-size: var(--small-font-size);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+}
+
+/*img {
+    max-width: min(100%,400px);
+}*/
+
+button {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: solid;
+    border-color: var(--button-border-color);
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: var(--button-shadow);
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+    color: var(--button-text-hover-color);
+    border: solid;
+    border-color: var(--button-border-color);
+    box-shadow: var(--button-shadow);
+}
+
+/*==================== HEADER ====================*/
+#header-zone {
+    position: relative;
+}
+
+#header-zone video {
+    width: 100%;
+}
+
+#header-img {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+#header-img img {
+    opacity: 99%;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
+.scroll-down-zone {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#scroll-down {
+    opacity: 1;
+    -webkit-transition: all .5s ease-in 3s;
+    transition: all .5s ease-in 3s;
+}
+
+#scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -16px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid rgb(121, 121, 121);
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+#scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid rgb(121, 121, 121);
+    border-width: 0px 0 2px 2px;
 }
