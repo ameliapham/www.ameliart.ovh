@@ -6,9 +6,9 @@
 :root {
     /*========== Colors ==========*/
     --background-color: hsl(33, 100%, 95%);
-    --title-color: hsl(0, 0%, 7%);
-    --title-shadow: hsl(0, 0%, 30%, 0.27);
-    --text-color: hsl(0, 0%, 0%);
+    --h1-color: hsl(0, 0%, 7%);
+    --h1-shadow: hsl(0, 0%, 30%, 0.27);
+    --text-color: hsl(0, 0%, 0%, 0.62);
 
     --button-color: hsl(222, 100%, 18%);
     --button-shadow: hsl(0, 0%, 30%, 0.27);
@@ -18,17 +18,16 @@
     --button-text-hover-color: hsl(0, 0%, 0%);
 
     /*========== Font and typography ==========*/
-    --titre-font: "Cormorant Garamond", serif;
+    --h1-font: "Cormorant Garamond", serif;
+    --h2-font: "Playfair Display", serif;    
     --body-font: "Poppins", serif;
-    --h1-font: "Playfair Display", serif;
 
-    --biggest-font-size: 2rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
+    --h1-font-size: 8rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
 
     /*========== Margenes Bottom ==========*/
     --mb-0-25: 0.25rem;
@@ -41,15 +40,26 @@
 }
 
 /* Responsive typography */
-@media screen and (min-width: 992px) {
+
+@media (max-width: 36em) {
     :root {
-      --biggest-font-size: 4rem;
-      --h1-font-size: 2.25rem;
-      --h2-font-size: 1.5rem;
-      --h3-font-size: 1.25rem;
-      --normal-font-size: 1rem;
-      --small-font-size: 0.875rem;
-      --smaller-font-size: 0.813rem;
+        --h1-font-size: 5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 0.938rem;
+        --small-font-size: 0.813rem;
+        --smaller-font-size: 0.813rem;
+    }
+}
+
+@media (min-width: 36em) and (max-width: 48em) {
+    :root {
+        --h1-font-size: 6rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 0.875rem;
+        --smaller-font-size: 0.75rem;    
     }
 }
 
@@ -75,12 +85,25 @@ h1,
 h2,
 h3,
 h4 {
-    color: var(--title-color);
+    color: var(--h1-color);
 }
 
 /*img {
     max-width: min(100%,400px);
 }*/
+
+.h1 {
+    font-family: var(--h1-font);
+    font-size: var(--h1-font-size);
+    text-shadow:  8px 7px var(--h1-shadow);
+}
+
+.h2 {
+    font-family: var(--h2-font);
+    font-size: var(--h2-font-size);
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
 
 button {
     font-family: var(--body-font);
@@ -120,7 +143,7 @@ button:hover {
 #header-img {
     position: absolute;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
 }
 
 #header-img img {
@@ -179,4 +202,106 @@ button:hover {
     content: "";
     border: 2px solid rgb(121, 121, 121);
     border-width: 0px 0 2px 2px;
+}
+
+/*==================== INTRODUCTION ====================*/
+#intro-zone {
+    width: 80%;
+    display: flex;
+    margin-bottom: 200px;
+}
+
+#intro-zone img {
+    max-width: 40%;
+    /*height: fit-content;*/
+    object-fit: cover;
+    margin-top: 100px;
+}
+
+#intro-zone h1 {
+    display: flex;
+    justify-content: end;
+    margin-bottom: -30px;
+}
+
+#intro-zone .text-zone {
+    margin: 100px 0 0 70px;
+}
+
+#intro-zone h2 {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+#intro-zone h2:first-of-type {
+    animation: showup 7s infinite;
+}
+
+#intro-zone h2:last-of-type {
+    width:0px;
+    animation: reveal 7s infinite;
+}
+  
+#intro-zone h2:last-of-type span {
+    margin-left:-355px;
+    animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+
+/*
+@media (min-width: 36em) {
+
+}
+
+@media (min-width: 48em) {
+
+}
+*/
+/*
+@media (min-width: 62em) {
+
+}
+*/
+
+/*
+@media (min-width: 78em) {
+
+}
+*/
+
+
+@media (max-width: 47em) {
+    #intro-zone {
+        display: unset;
+    }
+    #intro-zone img {
+        display: none ;
+        margin-top: 0;
+    }
+    #intro-zone .text-zone {
+        margin: 40px 0 0 0;
+    }
 }
